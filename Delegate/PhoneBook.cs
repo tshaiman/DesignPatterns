@@ -38,7 +38,6 @@ namespace Delegate
         public void Print()
         {
             foreach (IPersonalDetails per in list)
-
                 Console.WriteLine(per.Details.GetHashCode() + ":" + per.ToString());
         }
 

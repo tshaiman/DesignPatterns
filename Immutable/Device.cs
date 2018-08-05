@@ -10,15 +10,15 @@ namespace Immutable
     {
         private readonly String SerialNumber ;
         private readonly DateTime ManufactureDate;
-        private readonly double price;
+        
 
-        public double Price { get { return price; } private set; }
+        public double Price { get; set; }
 
         public Device(string serial,DateTime date,double price)
         {
             this.SerialNumber = serial;
             ManufactureDate = date;
-            this.price = price;
+            this.Price = price;
         }
 
         public Device Discount()

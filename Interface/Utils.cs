@@ -8,7 +8,7 @@ namespace Interface
 {
     public static class Utils
     {
-        public static bool IsMatch(Person p)
+        public static bool IsMatch(this Person p)
         {
             return p.Name.StartsWith("A", StringComparison.CurrentCultureIgnoreCase);
         }

@@ -19,7 +19,6 @@ namespace Interface
             pb.Add(new Person("Ron", "03-135790"));
             pb.Add(new Person("Sharon", "03-246800"));
             pb.Add(new Person("arnon", "06-666800"));
-            var p = new Person();
             pb.Print(Utils.IsMatch);
             //pb.Print(new PhoneBook.FilterHandler(match));
             //pb.Print(match);
