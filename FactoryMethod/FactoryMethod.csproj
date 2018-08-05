@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="Pizza.cs" />
     <Compile Include="PizzaStore.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
