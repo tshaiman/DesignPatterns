@@ -8,9 +8,14 @@ namespace FactoryMethod
 {
     public class PizzaStore
     {
-        public Pizza CreatePizza(string name)
+        private IPizzaFactory factory;
+        public PizzaStore(IPizzaFactory factory)
         {
-            return null; //Greek / Cheese//Pepperoni
+            this.factory = factory;
+        }
+        public Pizza GetPizza(string name)
+        {
+            return factory.GetPizza(name);
         }
     }
 }

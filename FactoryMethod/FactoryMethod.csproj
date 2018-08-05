@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pizza.cs" />
+    <Compile Include="PizzaFactory.cs" />
     <Compile Include="PizzaStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
