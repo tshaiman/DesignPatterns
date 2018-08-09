@@ -23,6 +23,11 @@ namespace CommerceProject.Model
             _items.Add(orderItem);
         }
 
+
+        /// <summary>
+        /// Total Ammount - Refactor
+        /// </summary>
+        /// <returns></returns>
         public decimal TotalAmount()
         {
             decimal total = 0m;
