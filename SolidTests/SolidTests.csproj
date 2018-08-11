@@ -49,18 +49,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculateAreaShouldReturn.cs" />
+    <Compile Include="ISP_Tests.cs" />
     <Compile Include="NoInherit.cs" />
     <Compile Include="OpenCloseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TellDontAsk.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Solid02-OpenClose\Solid02-OpenClose.csproj">
       <Project>{3a68dca0-7d8d-487f-99c8-747ac62fc360}</Project>
       <Name>Solid02-OpenClose</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Solid04-ISP\Solid04-ISP.csproj">
+      <Project>{35fee527-14b3-4125-9410-284a7ab0809e}</Project>
+      <Name>Solid04-ISP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
