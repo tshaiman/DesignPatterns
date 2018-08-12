@@ -23,32 +23,36 @@ namespace FactoryMethod
 
             return pizza;
         }
+
+        protected Dictionary<String, Func<Pizza>> _factories;
+
+        public PizzaFactory()
+        {
+            _factories = new Dictionary<string, Func<Pizza>>();
+            _factories.Add("Cheese", () => new CheezePizza());
+            _factories.Add("Pepperoni", () => new PepperoniPizza());
+            _factories.Add("Greek", () => new GreekPizza());
+
+        }
         protected virtual Pizza CreatePizza(string name)
         {
-            //return null; //Greek / Cheese//Pepperoni
-            if (name.Equals("Cheese"))
-                return new CheezePizza();
-            else if (name.Equals("Pepperoni"))
-                return new PepperoniPizza();
-            else if (name.Equals("Greek"))
-                return new GreekPizza();
-            return null;
+            try
+            {
+                return _factories[name]();
+            }
+            catch(Exception e)
+            {
+                return null;
+            }
         }
-
-
+        
     }
 
     public class NYPizzaFactory : PizzaFactory
     {
-
-        protected override Pizza CreatePizza(string name)
+        public NYPizzaFactory()
         {
-            //return null; //Greek / Cheese//Pepperoni
-            if (name.Equals("NYCheese"))
-                return new NYCheesePizza();
-            return base.CreatePizza(name);
+            _factories.Add("NYCheese", () => new NYCheesePizza());
         }
-
-
     }
 }

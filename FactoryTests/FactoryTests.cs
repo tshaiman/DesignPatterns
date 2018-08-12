@@ -30,7 +30,7 @@ namespace FactoryTests
         [TestMethod]
         public void TestCreateNWFactory()
         {
-            PizzaStore pz = new PizzaStore(new FakeFactory());
+            PizzaStore pz = new PizzaStore(new NYPizzaFactory());
             var pizza = pz.GetPizza("NYCheese");
             Assert.IsNotNull(pizza);
             Assert.AreEqual("NYCheese", pizza.Name);

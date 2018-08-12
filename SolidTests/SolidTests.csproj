@@ -60,9 +60,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Solid02-OpenClose\Solid02-OpenClose.csproj">
-      <Project>{3a68dca0-7d8d-487f-99c8-747ac62fc360}</Project>
-      <Name>Solid02-OpenClose</Name>
+    <ProjectReference Include="..\Solid02-OpenCloseSolution\Solid02-OpenCloseSolution.csproj">
+      <Project>{32075fff-b285-40b1-abd0-1d3866c6a0b6}</Project>
+      <Name>Solid02-OpenCloseSolution</Name>
     </ProjectReference>
     <ProjectReference Include="..\Solid04-ISP\Solid04-ISP.csproj">
       <Project>{35fee527-14b3-4125-9410-284a7ab0809e}</Project>

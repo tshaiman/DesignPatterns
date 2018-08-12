@@ -10,6 +10,7 @@
         public decimal CalculatePrice(OrderItem item)
         {
             return item.Quantity*5m;
+
         }
     }
 }
