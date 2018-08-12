@@ -22,7 +22,7 @@ namespace SolidTests
 
             var output = textWriter.ToString();
 
-            Assert.AreEqual("Interface Segregation By Tomer Shaiman", output);
+            Assert.AreEqual("ISP04 By Avi Shalom", output);
         }
     }
 
@@ -39,7 +39,7 @@ namespace SolidTests
 
             var output = textWriter.ToString();
 
-            Assert.AreEqual("Interface Segregation By Tomer Shaiman", output);
+            Assert.AreEqual("ISP04 By Avi Shalom", output);
         }
 
         class Settings : IConfigurationSettings
@@ -83,20 +83,36 @@ namespace SolidTests
             {
                 get { throw new NotImplementedException(); }
             }
+
             #endregion
         }
 
-        [TestMethod]
-        public void DisplayApplicationNameNoFile()
+               [TestMethod]
+        public void DisplayApplicationNameNoFile_Final()
         {
             // make it  works without app.config
-            var aboutPage = new AboutPage();
+            var aboutPage = new InterfaceSegregation.Configuration2.AboutPage(new AppSimpleSettings());
             var textWriter = new StringWriter();
             aboutPage.Render(textWriter);
 
             var output = textWriter.ToString();
 
             Assert.AreEqual("TEST APP NAME By TEST AUTHOR NAME", output);
+
         }
+
+        public class AppSimpleSettings : IAppSettings
+        {
+            public string ApplicationName
+            {
+                get { return "TEST APP NAME"; }
+            }
+
+            public string AuthorName
+            {
+                get { return "TEST AUTHOR NAME"; }
+            }
+        }
+                
     }
 }

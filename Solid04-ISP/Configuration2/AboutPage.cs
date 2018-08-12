@@ -5,11 +5,11 @@ namespace InterfaceSegregation.Configuration2
 {
     public class AboutPage
     {
-        private readonly IConfigurationSettings _configurationSettings;
+        private readonly IAppSettings _appSettings;
 
-        public AboutPage(IConfigurationSettings configurationSettings)
+        public AboutPage(IAppSettings configurationSettings)
         {
-            _configurationSettings = configurationSettings;
+            _appSettings = configurationSettings;
         }
         
         public AboutPage() : this(ConfigurationSettings.Settings)
@@ -18,7 +18,7 @@ namespace InterfaceSegregation.Configuration2
         public void Render(TextWriter writer)
         {
             //todo : right implementation
-            writer.Write("{0} By {1}", string.Empty, string.Empty);
+            writer.Write("{0} By {1}", _appSettings.ApplicationName, _appSettings.AuthorName);
         }
     }
 }

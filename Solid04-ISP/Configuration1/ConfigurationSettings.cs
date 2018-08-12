@@ -8,6 +8,8 @@ namespace InterfaceSegregation.Configuration1
     public class ConfigurationSettings : ConfigurationSection, IConfigurationSettings
     {
         private static ConfigurationSettings _settings = ConfigurationManager.GetSection("ConfigurationSettings") as ConfigurationSettings;
+
+
         public static ConfigurationSettings Settings
         {
             get { return _settings; }
