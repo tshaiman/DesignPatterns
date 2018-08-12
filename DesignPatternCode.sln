@@ -17,8 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creatoinal", "Creatoinal", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{118BBD8C-EB11-4526-8F31-D496D1627705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryTests", "FactoryTests\FactoryTests.csproj", "{B69458C3-CDC7-48B9-814C-C599D23D9AB0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solid", "Solid", "{CD1A87DE-DB38-4686-996A-D7E53A560EE0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid01-SRP", "Solid01-SRP\Solid01-SRP.csproj", "{DDA8A2E7-F388-4028-A7E3-37E94D8DDEFD}"
@@ -27,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid01-SRP-Solution", "Sol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid02-OpenClose", "Solid02-OpenClose\Solid02-OpenClose.csproj", "{3A68DCA0-7D8D-487F-99C8-747AC62FC360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidTests", "SolidTests\SolidTests.csproj", "{1F31A49C-B4AE-44F1-85E4-53D9A8638743}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternTests", "SolidTests\DesignPatternTests.csproj", "{1F31A49C-B4AE-44F1-85E4-53D9A8638743}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid02-OpenCloseSolution", "Solid02-OpenCloseSolution\Solid02-OpenCloseSolution.csproj", "{32075FFF-B285-40B1-ABD0-1D3866C6A0B6}"
 EndProject
@@ -67,10 +65,6 @@ Global
 		{118BBD8C-EB11-4526-8F31-D496D1627705}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{118BBD8C-EB11-4526-8F31-D496D1627705}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{118BBD8C-EB11-4526-8F31-D496D1627705}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B69458C3-CDC7-48B9-814C-C599D23D9AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B69458C3-CDC7-48B9-814C-C599D23D9AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B69458C3-CDC7-48B9-814C-C599D23D9AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B69458C3-CDC7-48B9-814C-C599D23D9AB0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DDA8A2E7-F388-4028-A7E3-37E94D8DDEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DDA8A2E7-F388-4028-A7E3-37E94D8DDEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDA8A2E7-F388-4028-A7E3-37E94D8DDEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU

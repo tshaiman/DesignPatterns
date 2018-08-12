@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculateAreaShouldReturn.cs" />
+    <Compile Include="FactoryTests.cs" />
     <Compile Include="ISP_Tests.cs" />
     <Compile Include="NoInherit.cs" />
     <Compile Include="OpenCloseTests.cs" />
@@ -60,6 +61,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj">
+      <Project>{118bbd8c-eb11-4526-8f31-d496d1627705}</Project>
+      <Name>FactoryMethod</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Solid02-OpenCloseSolution\Solid02-OpenCloseSolution.csproj">
       <Project>{32075fff-b285-40b1-abd0-1d3866c6a0b6}</Project>
       <Name>Solid02-OpenCloseSolution</Name>
